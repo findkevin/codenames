@@ -49,6 +49,9 @@ app.get('/wordList', (req, res, next) => {
 app.get('/wordList/:id', (req, res, next) => {
   console.log('Card List Word')
   const id = Number(req.params.id)
+  if( id<0 || id>wordList.length-1 ){
+    res.status(404).send('This card is not in our deck!')
+  }
   res.send(wordList[id])
 })
 
