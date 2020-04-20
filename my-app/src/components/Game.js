@@ -4,14 +4,16 @@ import '../css/game.css'
 
 
 class Game extends Component {
-  // constructor(props){
-  //   super(props)
-  //   // Get game-name from URI.
-  //   // const gameName = window.location.pathname.split('/')[1]
-  // }
+  constructor(props){
+    super(props)
+    this.state = {
+    // Get game-name from URI.
+    gameName : window.location.pathname.split('/')[1],
+    }
+
+  }
 
   render() {
-    const gameName = window.location.pathname.split("/")[1];
     // const winner = this.props.game.winner;
     // let status;
     // const playingTeam = this.props.game.blueTurn ? "blue" : "red";
@@ -23,10 +25,11 @@ class Game extends Component {
     // const game = this.createScoreboard();
 
     return(
-      <div>
+      <div id="game">
         <h1>This is the Game room.</h1>
         <span>
-          Send this room name to friends : {gameName}
+          <p>You are playing in room: {this.state.gameName}</p>
+          <p>Send this link to your friends to join this game! www.klCodeNames.com/{this.state.gameName}</p>
           <Board/>
         </span>
       </div>

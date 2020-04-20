@@ -6,6 +6,7 @@ import history from "./history";
 
 import "./css/index.css";
 import "./css/App.css"
+import "./css/game.css"
 import * as serviceWorker from "./serviceWorker";
 
 //Import Components
