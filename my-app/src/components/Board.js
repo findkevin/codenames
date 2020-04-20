@@ -19,7 +19,7 @@ class Board extends Component {
 
   render() {
     return (
-      <div id="board">
+      <div>
         <h1>This is the board component</h1>
         <div className="board-row">
           {this.renderCard(0)}

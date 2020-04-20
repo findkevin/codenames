@@ -17,7 +17,7 @@ export default function Card(props) {
 
   return (
     <div className={"card" + cssClass} onClick={props.onClick}>
-      {/* {props.info.value} */} card props info value
+      {/* {this.props.info.value} */}
     </div>
   );
 }
