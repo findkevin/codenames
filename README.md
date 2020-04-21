@@ -22,3 +22,6 @@ Progress:
   - https://medium.com/@pshrmn/a-little-bit-of-history-f245306f48dd
   - https://medium.com/@ivantsov/using-react-router-and-history-38c021270829
 - Create React components.
+- Create Redux Store.
+- Create Reducers to query data from store.
+- Initialize sockets.io

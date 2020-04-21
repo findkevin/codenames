@@ -19,13 +19,10 @@ export function updateGame(game)
   };
 }
 
-export function startNewGame(gameName, expansions, duetTurns, duetBystanders)
+export function startNewGame(gameName)
 {
   axios.post(gameName + '/newGame', {
-    gameName,
-    expansions,
-    duetTurns,
-    duetBystanders,
+    gameName
   });
 }
 
@@ -34,21 +31,10 @@ export function endTurn(gameName)
   axios.get(gameName + '/endTurn');
 }
 
-export function cardClick(gameName, cardIndex, teamClicked, duetTeamClicked)
+export function cardClick(gameName, cardIndex, teamClicked)
 {
   axios.post(gameName + '/cardClicked', {
     cardIndex,
-    teamClicked,
-    duetTeamClicked
+    teamClicked
   });
 }
-
-// export function toggleHardMode(gameName)
-// {
-//   axios.get(gameName + '/hardMode');
-// }
-
-// export function toggleDuet(gameName)
-// {
-//   axios.get(gameName + '/duetMode');
-// }
