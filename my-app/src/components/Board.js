@@ -11,7 +11,6 @@ class Board extends Component {
         />
       );
     }
-    console.log(this.props.isSpymaster);
   }
 
   render() {

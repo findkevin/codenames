@@ -49,12 +49,14 @@ class Game extends Component {
     const winner = this.props.game.winner;
     let status = "";
     let playingTeam = this.props.game.blueTurn ? "blue" : "red";
-    let playingTeamColour = playingTeam;
+    let playingTeamColor = playingTeam;
 
     if (winner) {
-      status = winner + " team wins!";
+      status = winner.toUpperCase() + " TEAM WINS!";
     } else {
-      status = (this.props.game.blueTurn ? "Blue" : "Red") + " team's turn";
+      status =
+        (this.props.game.blueTurn ? "BLUE" : "RED") +
+        " Team's turn!";
     }
 
     return (
@@ -64,50 +66,69 @@ class Game extends Component {
         }
         id="game"
       >
-        <h1>Welcome to the game room: {this.state.gameName}</h1>
+        <h1>Codenames room: {this.state.gameName}</h1>
         <p>
-          Send this link to your friends: www.codenames.com/
+          Share this link with your friends to play together: www.codenames.com/
           {this.state.gameName}
         </p>
 
         <div id="board">
           <div id="top-bar">
-            <div id="score" />
-            <div id="status" className={playingTeamColour}>
+            <div>
+              <button id="end-turn" className="button" onClick={this.endTurn}>
+                End {playingTeam.toUpperCase()} team's turn
+              </button>
+            </div>
+            <div id="status" className={playingTeamColor}>
               {status}
             </div>
-            <button id="end-turn" onClick={this.endTurn}>
-              End {playingTeam}&apos;s turn
-            </button>
+            <div>
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  value={
+                    this.props.options.role === "Spymaster"
+                      ? "Player"
+                      : "Spymaster"
+                  }
+                  onChange={this.changeRole}
+                  checked={this.props.options.role === "Spymaster"}
+                />
+                <span className="slider">
+                  {this.props.options.role === "Spymaster"
+                    ? " I am the Spymaster!"
+                    : " Spymaster"}
+                </span>
+              </label>
+              <button id="next-game" className="button" onClick={this.newGame}>
+                New Game!
+              </button>
+            </div>
           </div>
 
           <Board
             cards={this.props.game.cards}
             cardClick={(i) => this.cardClick(i)}
           />
-          <div>
-            <div className="right">
-              <React.Fragment>
-                <div className="switch-input">
-                  <label className="switch">
-                    <input
-                      type="checkbox"
-                      value={
-                        this.props.options.role === "Spymaster"
-                          ? "Player"
-                          : "Spymaster"
-                      }
-                      onChange={this.changeRole}
-                      checked={this.props.options.role === "Spymaster"}
-                    />
-                  </label>
-                  <div className="switch-label">Spymaster</div>
-                </div>
-              </React.Fragment>
-              <button id="next-game" onClick={this.newGame}>
-                Next game
-              </button>
-            </div>
+
+          <div className="right">
+            {/* <label className="switch">
+              <input
+                type="checkbox"
+                value={
+                  this.props.options.role === "Spymaster"
+                    ? "Player"
+                    : "Spymaster"
+                }
+                onChange={this.changeRole}
+                checked={this.props.options.role === "Spymaster"}
+              />
+              <span className="slider">Spymaster</span>
+            </label>
+
+            <button id="next-game" className="button" onClick={this.newGame}>
+              New Game!
+            </button> */}
           </div>
         </div>
       </div>
@@ -118,26 +139,26 @@ class Game extends Component {
   /* Client actions */
   // Score CSS classes and info
   createScoreboard() {
-    let firstTeamColour;
+    let firstTeamColor;
     let firstTeamScore;
-    let secondTeamColour;
+    let secondTeamColor;
     let secondTeamScore;
     if (this.props.game.blueTeamFirst) {
-      firstTeamColour = "blue";
+      firstTeamColor = "blue";
       firstTeamScore = this.props.game.blueCards;
-      secondTeamColour = "red";
+      secondTeamColor = "red";
       secondTeamScore = this.props.game.redCards;
     } else {
-      firstTeamColour = "red";
+      firstTeamColor = "red";
       firstTeamScore = this.props.game.redCards;
-      secondTeamColour = "blue";
+      secondTeamColor = "blue";
       secondTeamScore = this.props.game.blueCards;
     }
 
     return {
-      firstTeamColour,
+      firstTeamColor,
       firstTeamScore,
-      secondTeamColour,
+      secondTeamColor,
       secondTeamScore,
     };
   }
