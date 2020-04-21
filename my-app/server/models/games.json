@@ -2,10 +2,10 @@
   {
     "cards": [
       {
-        "value": "BALL",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
+        "value": "GLOVE",
+        "team": "Blue",
+        "clicked": true,
+        "teamClicked": "Red",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
@@ -14,22 +14,10 @@
         }
       },
       {
-        "value": "FALL",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "JAM",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
+        "value": "BUGLE",
+        "team": "Blue",
+        "clicked": true,
+        "teamClicked": "Blue",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
@@ -38,34 +26,34 @@
         }
       },
       {
-        "value": "SPOT",
+        "value": "SUB",
         "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
+        "clicked": true,
+        "teamClicked": "Blue",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
-          "teamOneValue": "Agent",
+          "teamOneValue": "Neutral",
           "teamTwoValue": "Agent"
         }
       },
       {
-        "value": "DANCE",
+        "value": "PAN",
         "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
+        "clicked": true,
+        "teamClicked": "Red",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
           "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
+          "teamTwoValue": "Agent"
         }
       },
       {
-        "value": "LINE",
+        "value": "CHECK",
         "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
+        "clicked": true,
+        "teamClicked": "Blue",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
@@ -74,10 +62,22 @@
         }
       },
       {
-        "value": "LITTER",
+        "value": "DECK",
+        "team": "Neutral",
+        "clicked": true,
+        "teamClicked": "Blue",
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Agent"
+        }
+      },
+      {
+        "value": "BRIDGE",
         "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
+        "clicked": true,
+        "teamClicked": "Red",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
@@ -86,10 +86,10 @@
         }
       },
       {
-        "value": "SCHOOL",
+        "value": "FORCE",
         "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
+        "clicked": true,
+        "teamClicked": "Blue",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
@@ -98,44 +98,44 @@
         }
       },
       {
-        "value": "NEW YORK",
+        "value": "STATE",
         "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "DEATH",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "BOND",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
+        "clicked": true,
+        "teamClicked": "Blue",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
           "teamOneValue": "Assassin",
-          "teamTwoValue": "Agent"
+          "teamTwoValue": "Neutral"
         }
       },
       {
-        "value": "LEMON",
-        "team": "Blue",
+        "value": "BOOT",
+        "team": "Neutral",
+        "clicked": true,
+        "teamClicked": "Blue",
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "MOSCOW",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "HEAD",
+        "team": "Red",
         "clicked": false,
         "teamClicked": null,
         "duet": {
@@ -143,59 +143,59 @@
           "teamTwoClicked": false,
           "teamOneValue": "Assassin",
           "teamTwoValue": "Assassin"
-        }
-      },
-      {
-        "value": "EYE",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "WHIP",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "HOTEL",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "SATURN",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
         }
       },
       {
         "value": "MOUTH",
         "team": "Assassin",
+        "clicked": true,
+        "teamClicked": "Red",
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "SHADOW",
+        "team": "Red",
+        "clicked": true,
+        "teamClicked": "Blue",
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "BOTTLE",
+        "team": "Blue",
+        "clicked": true,
+        "teamClicked": "Red",
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "POLICE",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Assassin",
+          "teamTwoValue": "Agent"
+        }
+      },
+      {
+        "value": "SHOT",
+        "team": "Red",
         "clicked": false,
         "teamClicked": null,
         "duet": {
@@ -206,8 +206,68 @@
         }
       },
       {
-        "value": "GLASS",
+        "value": "FORK",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Agent"
+        }
+      },
+      {
+        "value": "GAS",
         "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Agent"
+        }
+      },
+      {
+        "value": "PIANO",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "SMUGGLER",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "COURT",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "BILL",
+        "team": "Blue",
         "clicked": false,
         "teamClicked": null,
         "duet": {
@@ -218,95 +278,35 @@
         }
       },
       {
-        "value": "KEY",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "EGYPT",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "ROSE",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "OPERA",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Assassin",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "BUCK",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "YARD",
+        "value": "FILE",
         "team": "Blue",
         "clicked": false,
         "teamClicked": null,
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Neutral"
         }
       },
       {
-        "value": "MINT",
-        "team": "Neutral",
+        "value": "VAN",
+        "team": "Red",
         "clicked": false,
         "teamClicked": null,
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
           "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
+          "teamTwoValue": "Agent"
         }
       }
     ],
     "gameName": "hello",
-    "blueTurn": true,
-    "redCards": 8,
-    "blueCards": 9,
-    "winner": null,
+    "blueTurn": false,
+    "redCards": 6,
+    "blueCards": 3,
+    "winner": "Blue",
     "blueTeamFirst": true,
     "hardMode": false,
     "duetMode": false,
@@ -317,49 +317,13 @@
       "timerTokens": 9,
       "bystanders": 9
     },
-    "gameStartTime": "2020-04-20T19:18:36.831Z",
-    "lastUpdated": "2020-04-20T19:18:36.831Z"
+    "gameStartTime": "2020-04-21T14:21:16.919Z",
+    "lastUpdated": "2020-04-21T14:21:16.919Z"
   },
   {
     "cards": [
       {
-        "value": "CROWN",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "POUND",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "CHAIR",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "WASHINGTON",
+        "value": "TRUNK",
         "team": "Neutral",
         "clicked": false,
         "teamClicked": null,
@@ -367,47 +331,23 @@
           "teamOneClicked": false,
           "teamTwoClicked": false,
           "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
+          "teamTwoValue": "Assassin"
         }
       },
       {
-        "value": "SNOWMAN",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "DROP",
-        "team": "Blue",
+        "value": "KID",
+        "team": "Neutral",
         "clicked": false,
         "teamClicked": null,
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
           "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
+          "teamTwoValue": "Neutral"
         }
       },
       {
         "value": "POLE",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "CHICK",
         "team": "Neutral",
         "clicked": false,
         "teamClicked": null,
@@ -415,18 +355,6 @@
           "teamOneClicked": false,
           "teamTwoClicked": false,
           "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "BRUSH",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
           "teamTwoValue": "Neutral"
         }
       },
@@ -439,35 +367,23 @@
           "teamOneClicked": false,
           "teamTwoClicked": false,
           "teamOneValue": "Neutral",
-          "teamTwoValue": "Assassin"
+          "teamTwoValue": "Neutral"
         }
       },
       {
-        "value": "CAPITAL",
-        "team": "Red",
+        "value": "DECK",
+        "team": "Neutral",
         "clicked": false,
         "teamClicked": null,
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
           "teamOneValue": "Agent",
-          "teamTwoValue": "Assassin"
+          "teamTwoValue": "Agent"
         }
       },
       {
-        "value": "PLATYPUS",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "FACE",
+        "value": "MAIL",
         "team": "Neutral",
         "clicked": false,
         "teamClicked": null,
@@ -479,10 +395,10 @@
         }
       },
       {
-        "value": "LINE",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
+        "value": "NUT",
+        "team": "Neutral",
+        "clicked": true,
+        "teamClicked": "Blue",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
@@ -491,22 +407,130 @@
         }
       },
       {
-        "value": "DRESS",
+        "value": "RING",
         "team": "Blue",
         "clicked": false,
         "teamClicked": null,
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
+          "teamOneValue": "Assassin",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "PHOENIX",
+        "team": "Red",
+        "clicked": true,
+        "teamClicked": "Red",
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
           "teamOneValue": "Agent",
           "teamTwoValue": "Neutral"
         }
       },
       {
-        "value": "DOCTOR",
+        "value": "TICK",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "CENTAUR",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "SLIP",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Assassin",
+          "teamTwoValue": "Assassin"
+        }
+      },
+      {
+        "value": "ENGINE",
+        "team": "Blue",
+        "clicked": true,
+        "teamClicked": "Blue",
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "DEGREE",
+        "team": "Red",
+        "clicked": true,
+        "teamClicked": "Red",
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Agent"
+        }
+      },
+      {
+        "value": "SCALE",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "BOOM",
         "team": "Neutral",
         "clicked": false,
         "teamClicked": null,
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Neutral"
+        }
+      },
+      {
+        "value": "LAP",
+        "team": "Red",
+        "clicked": true,
+        "teamClicked": "Red",
+        "duet": {
+          "teamOneClicked": false,
+          "teamTwoClicked": false,
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Assassin"
+        }
+      },
+      {
+        "value": "AFRICA",
+        "team": "Blue",
+        "clicked": true,
+        "teamClicked": "Red",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
@@ -515,19 +539,7 @@
         }
       },
       {
-        "value": "STRAW",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "TEMPLE",
+        "value": "SPIDER",
         "team": "Blue",
         "clicked": false,
         "teamClicked": null,
@@ -539,19 +551,19 @@
         }
       },
       {
-        "value": "SERVER",
+        "value": "SPINE",
         "team": "Assassin",
-        "clicked": false,
-        "teamClicked": null,
+        "clicked": true,
+        "teamClicked": "Blue",
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
-          "teamOneValue": "Assassin",
-          "teamTwoValue": "Assassin"
+          "teamOneValue": "Agent",
+          "teamTwoValue": "Agent"
         }
       },
       {
-        "value": "POLICE",
+        "value": "LEMON",
         "team": "Blue",
         "clicked": false,
         "teamClicked": null,
@@ -563,19 +575,19 @@
         }
       },
       {
-        "value": "CRASH",
-        "team": "Neutral",
+        "value": "SHAKESPEARE",
+        "team": "Red",
         "clicked": false,
         "teamClicked": null,
         "duet": {
           "teamOneClicked": false,
           "teamTwoClicked": false,
-          "teamOneValue": "Assassin",
-          "teamTwoValue": "Neutral"
+          "teamOneValue": "Neutral",
+          "teamTwoValue": "Agent"
         }
       },
       {
-        "value": "TRUNK",
+        "value": "TRIANGLE",
         "team": "Blue",
         "clicked": false,
         "teamClicked": null,
@@ -587,8 +599,8 @@
         }
       },
       {
-        "value": "STRING",
-        "team": "Neutral",
+        "value": "SPY",
+        "team": "Red",
         "clicked": false,
         "teamClicked": null,
         "duet": {
@@ -599,20 +611,8 @@
         }
       },
       {
-        "value": "NEW YORK",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "IRON",
-        "team": "Neutral",
+        "value": "MOLE",
+        "team": "Red",
         "clicked": false,
         "teamClicked": null,
         "duet": {
@@ -624,653 +624,11 @@
       }
     ],
     "gameName": "abc",
-    "blueTurn": true,
-    "redCards": 8,
-    "blueCards": 9,
-    "winner": null,
-    "blueTeamFirst": true,
-    "hardMode": false,
-    "duetMode": false,
-    "duet": {
-      "teamOneTurn": true,
-      "winner": null,
-      "cardsLeft": 15,
-      "timerTokens": 9,
-      "bystanders": 9
-    },
-    "gameStartTime": "2020-04-20T17:34:38.920Z",
-    "lastUpdated": "2020-04-20T17:34:38.920Z"
-  },
-  {
-    "cards": [
-      {
-        "value": "WELL",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "BLOCK",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "FIGHTER",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "AFRICA",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "CRASH",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "PIRATE",
-        "team": "Assassin",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "WHALE",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "CANADA",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Assassin"
-        }
-      },
-      {
-        "value": "HOTEL",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "SCALE",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Assassin"
-        }
-      },
-      {
-        "value": "FRANCE",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "NEW YORK",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "TOKYO",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "NOVEL",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Assassin",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "MISSILE",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "ROBIN",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "TIE",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "COURT",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Assassin",
-          "teamTwoValue": "Assassin"
-        }
-      },
-      {
-        "value": "TURKEY",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "ICE",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "WATCH",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "KEY",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "MOUSE",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "TAP",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "MINE",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Assassin",
-          "teamTwoValue": "Agent"
-        }
-      }
-    ],
-    "gameName": "def",
-    "blueTurn": true,
-    "redCards": 8,
-    "blueCards": 9,
-    "winner": null,
-    "blueTeamFirst": true,
-    "hardMode": false,
-    "duetMode": false,
-    "duet": {
-      "teamOneTurn": true,
-      "winner": null,
-      "cardsLeft": 15,
-      "timerTokens": 9,
-      "bystanders": 9
-    },
-    "gameStartTime": "2020-04-20T17:34:47.402Z",
-    "lastUpdated": "2020-04-20T17:34:47.402Z"
-  },
-  {
-    "cards": [
-      {
-        "value": "POLE",
-        "team": "Assassin",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "WHIP",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "INDIA",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "LIFE",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "BATTERY",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Assassin",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "BUTTON",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "PLANE",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "SNOWMAN",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "MOON",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "CHEST",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "BUCK",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Assassin"
-        }
-      },
-      {
-        "value": "KING",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "REVOLUTION",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "BLOCK",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "FAN",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Assassin",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "PAN",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "PRINCESS",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "SUB",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "BOW",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Assassin",
-          "teamTwoValue": "Assassin"
-        }
-      },
-      {
-        "value": "PORT",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "CENTER",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "BACK",
-        "team": "Red",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Assassin"
-        }
-      },
-      {
-        "value": "HELICOPTER",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Agent",
-          "teamTwoValue": "Agent"
-        }
-      },
-      {
-        "value": "SWING",
-        "team": "Neutral",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Neutral"
-        }
-      },
-      {
-        "value": "SHARK",
-        "team": "Blue",
-        "clicked": false,
-        "teamClicked": null,
-        "duet": {
-          "teamOneClicked": false,
-          "teamTwoClicked": false,
-          "teamOneValue": "Neutral",
-          "teamTwoValue": "Agent"
-        }
-      }
-    ],
-    "gameName": "hellow",
     "blueTurn": false,
-    "redCards": 9,
-    "blueCards": 8,
-    "winner": null,
-    "blueTeamFirst": false,
+    "redCards": 5,
+    "blueCards": 7,
+    "winner": "Red",
+    "blueTeamFirst": true,
     "hardMode": false,
     "duetMode": false,
     "duet": {
@@ -1280,7 +638,7 @@
       "timerTokens": 9,
       "bystanders": 9
     },
-    "gameStartTime": "2020-04-20T17:35:00.525Z",
-    "lastUpdated": "2020-04-20T17:35:00.525Z"
+    "gameStartTime": "2020-04-21T14:23:30.202Z",
+    "lastUpdated": "2020-04-21T14:23:30.202Z"
   }
 ]

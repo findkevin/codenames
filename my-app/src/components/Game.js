@@ -168,6 +168,7 @@ class Game extends Component {
               End {playingTeam}&apos;s turn
             </button>
           </div>
+
           <Board
             cards={this.props.game.cards}
             cardClick={(i) => this.cardClick(i)}

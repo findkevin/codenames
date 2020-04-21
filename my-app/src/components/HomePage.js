@@ -13,7 +13,7 @@ class HomePage extends Component {
         <header className="App-header">
           <span>WELCOME TO CODENAMES!</span>
           <p>To join a game, enter the lobby name and click 'Enter.'</p>
-          <input type="text" id="game-name" onKeyPress={this.handleKeyPress} />
+          <input type="text" onInput={this.sanitizeGameName} id="game-name" onKeyPress={this.handleKeyPress} />
           <button onClick={this.startGame}>Enter</button>
           <footer>
             <p>Built by Kevin Lam</p>
@@ -26,9 +26,24 @@ class HomePage extends Component {
 
   //Helper Functions
   //Create a function to get the string value of the game name from the URI.
-  startGame() {
-    const gameName = document.getElementById("game-name").value;
-    history.push("/" + gameName);
+  startGame = () => {
+    let gameName = document.getElementById('game-name').value.replace(/-+$/, "");
+
+    // Remove trailing slashes
+    gameName = gameName.replace(/-+$/, "");
+
+    history.push('/'+ gameName)
+  }
+
+
+  sanitizeGameName = (event) => {
+    let gameName = document.getElementById('game-name').value;
+    gameName = gameName.replace(' ', '-')
+    gameName = gameName.replace('/', '-')
+    gameName = gameName.replace(';', '-')
+    gameName = gameName.replace(':', '-')
+    gameName = gameName.toLowerCase();
+    document.getElementById('game-name').value = gameName;
   }
 
   //Create a fn to listen for an event. If the event is ENTER, start the game.

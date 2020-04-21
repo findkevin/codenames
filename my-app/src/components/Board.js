@@ -1,26 +1,25 @@
-import React, { Component } from "react";
-import Card from "./Card";
+import React, { Component } from 'react';
+import Card from './Card';
 
-class Board extends Component {
-  renderCard(i) {
-    // if (this.props.cards[i]) {
-      return (
+class Board extends Component
+{
+  renderCard(i)
+  {
+    if(this.props.cards[i])
+    {
+      return(
         <Card
-          // info={this.props.cards[i]}
-          onClick={() => this.cardClick(i)}
+          info={this.props.cards[i]}
+          onClick={() => this.props.cardClick(i)}
         />
       );
-    // }
+    }
   }
 
-  cardClick(i) {
-    console.log("card " + i + " clicks");
-  }
-
-  render() {
+  render()
+  {
     return (
       <div>
-        <h1>This is the board component</h1>
         <div className="board-row">
           {this.renderCard(0)}
           {this.renderCard(1)}
@@ -60,5 +59,6 @@ class Board extends Component {
     );
   }
 }
+
 
 export default Board;
