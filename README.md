@@ -14,4 +14,11 @@ Goal of this project:
 5. Have FUN!
 
 Progress:
-- Initialized Create React App https://reactjs.org/docs/create-a-new-react-app.html
+- Initialized Create React App
+  - https://reactjs.org/docs/create-a-new-react-app.html
+- Create Express routes.
+- Access browser history through React Router.
+  - https://www.npmjs.com/package/history
+  - https://medium.com/@pshrmn/a-little-bit-of-history-f245306f48dd
+  - https://medium.com/@ivantsov/using-react-router-and-history-38c021270829
+- Create React components.
