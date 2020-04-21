@@ -81,6 +81,7 @@ apiRoutes.post("/:gameName/newGame", (req, res) => {
   res.sendStatus(200);
 
   const gameName = req.params.gameName;
+  const cardSets = req.body.expansions;
 
   const games = readGamesFromFile();
 
