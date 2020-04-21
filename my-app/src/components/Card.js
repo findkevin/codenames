@@ -1,27 +1,19 @@
-import React from 'react';
+import React from "react";
 
-export default function Card(props)
-{
-  let cssClass = '';
+export default function Card(props) {
+  let cssClass = "";
 
-  if(props.info.team === 'Blue')
-  {
-    cssClass += ' blue';
-  }
-  else if(props.info.team === 'Red')
-  {
-    cssClass += ' red';
-  }
-  else if(props.info.team === 'Assassin')
-  {
-    cssClass += ' black';
-  }
-  else
-  {
-    cssClass += ' neutral';
+  if (props.info.team === "Blue") {
+    cssClass += " blue";
+  } else if (props.info.team === "Red") {
+    cssClass += " red";
+  } else if (props.info.team === "Assassin") {
+    cssClass += " black";
+  } else {
+    cssClass += " neutral";
   }
 
-  cssClass += (props.info.clicked ? ' revealed' : ' hidden');
+  cssClass += props.info.clicked ? " revealed" : " hidden";
 
   return (
     <div className={"card" + cssClass} onClick={props.onClick}>

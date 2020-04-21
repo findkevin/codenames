@@ -67,22 +67,19 @@ class Game extends Component {
   }
 
   render() {
-    // const winner = this.props.game.winner;
+    const winner = this.props.game.winner;
 
     // const game = this.createScoreboard();
 
-    // let status;
+    let status = "";
     let playingTeam = this.props.game.blueTurn ? "blue" : "red";
-    // let playingTeamColour = playingTeam;
+    let playingTeamColour = playingTeam;
 
-    // if (winner)
-    // {
-    //   status = winner + ' team wins!';
-    // }
-    // else
-    // {
-    //   status = (this.props.game.blueTurn ? 'Blue' : 'Red') + ' team\'s turn';
-    // }
+    if (winner) {
+      status = winner + " team wins!";
+    } else {
+      status = (this.props.game.blueTurn ? "Blue" : "Red") + " team's turn";
+    }
 
     // Duet
     // if(this.props.game.duetMode)
@@ -139,12 +136,18 @@ class Game extends Component {
     // }
 
     return (
-      <div id="game">
-        <h1>Welcome to game room: {this.state.gameName}</h1>
+      <div
+        className={
+          this.props.options.role === "Spymaster" ? "spymaster" : "player"
+        }
+        id="game"
+      >
+        <h1>Welcome to the game room: {this.state.gameName}</h1>
         <p>
           Send this link to your friends: www.codenames.com/
           {this.state.gameName}
         </p>
+
         <div id="board">
           <div id="top-bar">
             <div id="score">
@@ -162,7 +165,9 @@ class Game extends Component {
               {/* </React.Fragment> */}
               {/* } */}
             </div>
-            {/* <div id="status" className={playingTeamColour}>{status}</div> */}
+            <div id="status" className={playingTeamColour}>
+              {status}
+            </div>
             {/* {!this.props.game.winner && this.props.game.duet.winner === null && this.props.game.duet.timerTokens > 0 &&  */}
             <button id="end-turn" onClick={this.endTurn}>
               End {playingTeam}&apos;s turn
@@ -173,74 +178,86 @@ class Game extends Component {
             cards={this.props.game.cards}
             cardClick={(i) => this.cardClick(i)}
           />
-          <div
+          {/* <div
             id="bottom-bar"
-            // className={this.props.options.role === 'Spymaster' ? 'spymaster-selected' : 'player-selected'}
-          >
-            <div className="left">
-              <div className="switch-input">
-                {/* <label className="switch">
+            className={
+              this.props.options.role === "Spymaster"
+                ? "spymaster-selected"
+                : "player-selected"
+            }
+          > */}
+          <div>
+            <p>bottom bar</p>
+            {/* <div className="left"> */}
+            {/* <div className="switch-input"> */}
+            {/* <label className="switch">
                   <input type="checkbox" onChange={this.toggleColourblind} />
                   <span className="slider round"></span>
                 </label> */}
-                {/* <div className="switch-label">Colourblind</div> */}
-              </div>
-              {/* <div className="switch-input">
+            {/* <div className="switch-label">Colourblind</div> */}
+            {/* </div> */}
+            {/* <div className="switch-input">
                 <div className="switch-label">Night Mode</div>
                 <label className="switch">
                   <input type="checkbox" onChange={this.toggleColourblind} />
                   <span className="slider round"></span>
                 </label>
               </div> */}
-              {/* <div className="switch-input"> */}
-              {/* <label className="switch"> */}
-              {/* <input type="checkbox" onChange={this.toggleDuet} checked={!!this.props.game.duetMode}/> */}
-              {/* <span className="slider round"></span> */}
-              {/* </label> */}
-              {/* <div className="switch-label">Duet</div> */}
-              {/* </div> */}
-            </div>
+            {/* <div className="switch-input"> */}
+            {/* <label className="switch"> */}
+            {/* <input type="checkbox" onChange={this.toggleDuet} checked={!!this.props.game.duetMode}/> */}
+            {/* <span className="slider round"></span> */}
+            {/* </label> */}
+            {/* <div className="switch-label">Duet</div> */}
+            {/* </div> */}
+            {/* </div> */}
             <div className="right">
-              {!this.props.game.duetMode ? (
-                <React.Fragment>
-                  <div className="switch-input">
-                    <label className="switch">
-                      <input
-                        type="checkbox"
-                        // value={this.props.options.role === 'Spymaster' ? 'Player' : 'Spymaster'} onChange={this.changeRole} checked={this.props.options.role === 'Spymaster'}
-                      />
-                      <span className="slider round"></span>
-                    </label>
-                    <div className="switch-label">Spymaster</div>
-                  </div>
-                  <div className="switch-input">
-                    {/* <label className="switch"> */}
-                    {/* <input type="checkbox" onChange={this.toggleHardMode} checked={!!this.props.game.hardMode}/> */}
+              {/* {!this.props.game.duetMode ? ( */}
+              <React.Fragment>
+                <div className="switch-input">
+                  <label className="switch">
+                    <input
+                      type="checkbox"
+                      value={
+                        this.props.options.role === "Spymaster"
+                          ? "Player"
+                          : "Spymaster"
+                      }
+                      onChange={this.changeRole}
+                      checked={this.props.options.role === "Spymaster"}
+                    />
                     {/* <span className="slider round"></span> */}
-                    {/* </label> */}
-                    {/* <div className="switch-label">Hard mode</div> */}
-                  </div>
-                </React.Fragment>
-              ) : (
+                  </label>
+                  <div className="switch-label">Spymaster</div>
+                </div>
+                {/* <div className="switch-input"> */}
+                {/* <label className="switch"> */}
+                {/* <input type="checkbox" onChange={this.toggleHardMode} checked={!!this.props.game.hardMode}/> */}
+                {/* <span className="slider round"></span> */}
+                {/* </label> */}
+                {/* <div className="switch-label">Hard mode</div> */}
+                {/* </div> */}
+              </React.Fragment>
+              {/* ) : (
                 <React.Fragment>
                   <div className="switch-input">
                     <div className="switch-label">&nbsp;Team Two</div>
-                    <label className="switch">
-                      {/* <input type="checkbox" onChange={this.toggleDuetTeam} checked={!this.props.options.duetTeamOne}/> */}
-                      <span className="slider round"></span>
+                    <label className="switch"> */}
+              {/* <input type="checkbox" onChange={this.toggleDuetTeam} checked={!this.props.options.duetTeamOne}/> */}
+              {/* <span className="slider round"></span>
                     </label>
                     <div className="switch-label">Team One</div>
                   </div>
-                  <div className="number-input">
-                    {/* <NumericInput min={1} max={11} step={1} size={1} id="totalTurns" name="totalTurns" onChange={this.changeDuetTurns} value={duetTimerTokens} />
+                  <div className="number-input"> */}
+              {/* <NumericInput min={1} max={11} step={1} size={1} id="totalTurns" name="totalTurns" onChange={this.changeDuetTurns} value={duetTimerTokens} />
                 <label htmlFor="totalTurns">Total turns (next game) </label>
               </div>
               <div className="number-input">
                 <NumericInput min={1} max={11} step={1} size={1} id="acceptableMistakes" name="acceptableMistakes" onChange={this.changeDuetMistakes} value={duetMistakesAllowed} /> */}
-                    {/* <label htmlFor="acceptableMistakes">Acceptable mistakes </label> */}
-                  </div>
+              {/* <label htmlFor="acceptableMistakes">Acceptable mistakes </label> */}
+              {/* </div>
                 </React.Fragment>
-              )}
+              )} */}
               <button id="next-game" onClick={this.newGame}>
                 Next game
               </button>

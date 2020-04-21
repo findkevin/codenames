@@ -1,23 +1,20 @@
-import React, { Component } from 'react';
-import Card from './Card';
+import React, { Component } from "react";
+import Card from "./Card";
 
-class Board extends Component
-{
-  renderCard(i)
-  {
-    if(this.props.cards[i])
-    {
-      return(
+class Board extends Component {
+  renderCard(i) {
+    if (this.props.cards[i]) {
+      return (
         <Card
           info={this.props.cards[i]}
           onClick={() => this.props.cardClick(i)}
         />
       );
     }
+    console.log(this.props.isSpymaster);
   }
 
-  render()
-  {
+  render() {
     return (
       <div>
         <div className="board-row">
@@ -59,6 +56,5 @@ class Board extends Component
     );
   }
 }
-
 
 export default Board;
