@@ -79,6 +79,9 @@
 #game.spymaster #board .card.blue.hidden {
   background: #4183cc;
 }
+#game.spymaster #board .card.neutral.hidden {
+  background: #ede2cc;
+}
 #game.spymaster #board .card.black.hidden {
   background: #000;
   color: #fff;
@@ -88,6 +91,7 @@
   outline: 5px solid #000;
   border: 2px solid #fff;
 }
+
 #game.spymaster #board .card {
   font-weight: 600;
   -webkit-user-select: none;
@@ -95,6 +99,8 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+
 
 /* End Spymaster Board View */
 
@@ -120,7 +126,6 @@
 #game #board .neutral.revealed {
   background: #ede2cc;
   transform: rotateY(-360deg);
-
 }
 
 /* End Flipped Card styling */

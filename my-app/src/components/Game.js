@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 import io from "socket.io-client";
 
 import Board from "./Board";
@@ -54,9 +55,7 @@ class Game extends Component {
     if (winner) {
       status = winner.toUpperCase() + " TEAM WINS!";
     } else {
-      status =
-        (this.props.game.blueTurn ? "BLUE" : "RED") +
-        " Team's turn!";
+      status = (this.props.game.blueTurn ? "BLUE" : "RED") + " Team's turn!";
     }
 
     return (
@@ -66,13 +65,15 @@ class Game extends Component {
         }
         id="game"
       >
-        <h1>Codenames room: {this.state.gameName}</h1>
-        <p>
-          Share this link with your friends to play together: www.codenames.com/
-          {this.state.gameName}
-        </p>
-
         <div id="board">
+          <h1 style={{ fontFamily: "Courier New,monospace" }}>
+            CODENAMES : {this.state.gameName.toUpperCase()}
+          </h1>
+          <p>
+            Share this link with your friends to play together:
+            <Link> www.codenames.com/{this.state.gameName}</Link>
+          </p>
+
           <div id="top-bar">
             <div>
               <button id="end-turn" className="button" onClick={this.endTurn}>
@@ -110,26 +111,6 @@ class Game extends Component {
             cards={this.props.game.cards}
             cardClick={(i) => this.cardClick(i)}
           />
-
-          <div className="right">
-            {/* <label className="switch">
-              <input
-                type="checkbox"
-                value={
-                  this.props.options.role === "Spymaster"
-                    ? "Player"
-                    : "Spymaster"
-                }
-                onChange={this.changeRole}
-                checked={this.props.options.role === "Spymaster"}
-              />
-              <span className="slider">Spymaster</span>
-            </label>
-
-            <button id="next-game" className="button" onClick={this.newGame}>
-              New Game!
-            </button> */}
-          </div>
         </div>
       </div>
     );
