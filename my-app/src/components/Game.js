@@ -68,9 +68,9 @@ class Game extends Component {
       >
         <div id="board">
         <img className="App-logo" src={CodeNames} alt="CodeNames Logo"></img>
-          {/* <h1 style={{ fontFamily: "Courier New,monospace" }}>
+          <h2 style={{ fontFamily: "Courier New,monospace" }}>
             Room Name : {this.state.gameName.toUpperCase()}
-          </h1> */}
+          </h2>
           <p>
             Share this link with your friends to play together:
             <Link> www.codenames.com/{this.state.gameName}</Link>
