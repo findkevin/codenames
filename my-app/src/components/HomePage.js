@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import history from "../history/index";
 
+import CodeNames from "../images/CodeNames.png";
 import GitHubMark from "../images/GitHub-Mark-32px.png";
 
 class HomePage extends Component {
@@ -13,23 +14,23 @@ class HomePage extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>WELCOME TO CODENAMES!</h1>
+          <img className="App-logo" src={CodeNames} alt="CodeNames Logo"></img>
 
           <hr />
-
-          <p>To join a game, enter the room name and click 'Enter.'</p>
-          <input
-            type="text"
-            onInput={this.sanitizeGameName}
-            id="game-name"
-            onKeyPress={this.handleKeyPress}
-          />
-          <button onClick={this.startGame}>Enter</button>
+          <div id="input-field">
+            <p>To join a game, enter the room name and click 'Enter.'</p>
+            <input
+              type="text"
+              onInput={this.sanitizeGameName}
+              id="game-name"
+              onKeyPress={this.handleKeyPress}
+            />
+            <button onClick={this.startGame}>Enter</button>
+          </div>
         </header>
 
         <footer>
-
-          <span>Built by Kevin Lam </span>
+          <span>Unofficial web version of Codenames created by Kevin Lam </span>
 
           <a
             className="App-link"
@@ -37,7 +38,11 @@ class HomePage extends Component {
             rel="noopener noreferrer"
             href="https://github.com/findkevin/codenames"
           >
-            <img className="App-logo" src={GitHubMark} alt="GitHub Mark"></img>
+            <img
+              className="GitHub-logo"
+              src={GitHubMark}
+              alt="GitHub Mark"
+            ></img>
           </a>
         </footer>
       </div>

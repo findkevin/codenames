@@ -4,19 +4,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family:
-  'Courier New',monospace;
-}
-
-.App-logo {
-  height: 11px;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 5s linear;
-  }
+  font-family: "Courier New", monospace;
 }
 
 .App-header {
@@ -31,11 +19,34 @@
   color: #282c34;
 }
 
+.App-logo {
+  width: 80%;
+}
+
+#input-field {
+  width: 50%
+}
+
+#game-name {
+  width: 50%;
+}
+
 .App-link {
   color: #4183cc;
 }
 
-@keyframes App-logo-spin {
+.GitHub-logo {
+  height: 11px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .GitHub-logo {
+    animation: GitHub-logo-spin infinite 5s linear;
+  }
+}
+
+@keyframes GitHub-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -59,27 +70,24 @@ footer {
 
 /* End App.css file */
 
-
 /* -------------------------------------------------------------------------- */
-
 
 /* Begin index.css file*/
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* End index.css file */
-
 
 /* -------------------------------------------------------------------------- */
