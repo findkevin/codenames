@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import io from "socket.io-client";
 
 import Board from "./Board";
+import CodeNames from '../images/CodeNames.png'
 import { connect } from "react-redux";
 
 import { changeRole } from "../actions/userOptionsActions";
@@ -66,9 +67,10 @@ class Game extends Component {
         id="game"
       >
         <div id="board">
-          <h1 style={{ fontFamily: "Courier New,monospace" }}>
-            CODENAMES : {this.state.gameName.toUpperCase()}
-          </h1>
+        <img className="App-logo" src={CodeNames} alt="CodeNames Logo"></img>
+          {/* <h1 style={{ fontFamily: "Courier New,monospace" }}>
+            Room Name : {this.state.gameName.toUpperCase()}
+          </h1> */}
           <p>
             Share this link with your friends to play together:
             <Link> www.codenames.com/{this.state.gameName}</Link>
