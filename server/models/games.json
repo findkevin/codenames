@@ -1,0 +1,326 @@
+[
+  {
+    "cards": [
+      {
+        "value": "LOG",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "FAN",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "CODE",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "OCTOPUS",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "PIN",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "SHIP",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "POLICE",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "LAWYER",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "OIL",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "PILOT",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "SCHOOL",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "CLUB",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "PITCH",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "BOLT",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "ALPS",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "NOVEL",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "GENIUS",
+        "team": "Assassin",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "LUCK",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "PASTE",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "SPELL",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "SPRING",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "DISEASE",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "BILL",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "ROUND",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "CRANE",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      }
+    ],
+    "gameName": "hello",
+    "blueTurn": true,
+    "redCards": 8,
+    "blueCards": 9,
+    "winner": null,
+    "blueTeamFirst": true,
+    "gameStartTime": "2020-04-22T20:06:45.699Z",
+    "lastUpdated": "2020-04-22T20:06:45.699Z"
+  },
+  {
+    "cards": [
+      {
+        "value": "GENIUS",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "BAND",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "BUFFALO",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "PART",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "ENGLAND",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "AUSTRALIA",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "PASS",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "GLOVE",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "HAWK",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "BUCK",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "MOUTH",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "LIFE",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "TABLET",
+        "team": "Assassin",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "TIME",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "ALPS",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "ALIEN",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "MATCH",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "BERMUDA",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "CARROT",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "AMBULANCE",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "DANCE",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "LAB",
+        "team": "Red",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "CHOCOLATE",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "TIE",
+        "team": "Blue",
+        "clicked": false,
+        "teamClicked": null
+      },
+      {
+        "value": "SCALE",
+        "team": "Neutral",
+        "clicked": false,
+        "teamClicked": null
+      }
+    ],
+    "gameName": "pre-alpha",
+    "blueTurn": true,
+    "redCards": 8,
+    "blueCards": 9,
+    "winner": null,
+    "blueTeamFirst": true,
+    "gameStartTime": "2020-04-22T20:08:09.969Z",
+    "lastUpdated": "2020-04-22T20:08:09.969Z"
+  }
+]
