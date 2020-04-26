@@ -1,3 +1,3 @@
-export const socketUrl = 'http://localhost:5000';
+export const socketUrl = 'http://localhost:8080';
 
-export const serverUrl = "http://localhost:5000/api";
+export const serverUrl = "http://localhost:8080/api";
