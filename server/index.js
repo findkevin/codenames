@@ -45,13 +45,16 @@ const server = app.listen(PORT, "localhost", () =>
 //Initialize sockets using socket.io
 const io = socket(server);
 
-io.on("connection", (socket) => {
-  socket.on("joinRoom", (roomName) => {
-    socket.join(roomName);
+io.on('connection', socket => {
+  console.log(`A socket connection to the server has been made: ${socket.id}`)
+  socket.on('joinRoom', (roomName) => {
+      socket.join(roomName);
+      console.log(`Someone joined the room ${roomName}.`)
+  })
+  socket.on('disconnect', () => {
+    console.log(`Connection ${socket.id} has left the building`)
   });
-
-  socket.on("disconnect", () => {});
-});
+})
 
 // Route to /api using Express Router to make sure we are getting our words from the wordList.
 var apiRoutes = express.Router();
@@ -336,7 +339,8 @@ function logError(err) {
 
 function readGamesFromFile() {
   const gamesFile = fs.readFileSync(__dirname + '/models/games.json');
-  return games = JSON.parse(gamesFile);
+  let games = JSON.parse(gamesFile);
+  return games;
 }
 
 function writeGamesToFile(games) {

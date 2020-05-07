@@ -158,16 +158,16 @@ class Game extends Component {
   }
 
   newGame() {
-    startNewGame(this.props.game.gameName);
+    this.props.dispatch(startNewGame(this.props.game.gameName));
   }
 
   cardClick(cardIndex) {
     const teamClicked = this.props.game.blueTurn ? "Blue" : "Red";
-    cardClick(this.props.game.gameName, cardIndex, teamClicked);
+    this.props.dispatch(cardClick(this.props.game.gameName, cardIndex, teamClicked));
   }
 
   endTurn() {
-    endTurn(this.props.game.gameName);
+    this.props.dispatch(endTurn(this.props.game.gameName));
   }
 }
 

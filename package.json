@@ -24,8 +24,7 @@
     "socket.io-client": "^2.3.0"
   },
   "scripts": {
-    "start": "npm run server",
-    "start-app": "react-scripts start",
+    "start": "react-scripts start",
     "server": "node ./server/index.js --host 0.0.0.0 --disable-host-check",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -19,22 +19,43 @@ export function updateGame(game)
   };
 }
 
-export function startNewGame(gameName)
-{
-  axios.post(gameName + '/newGame', {
-    gameName
-  });
+//THUNK
+export const startNewGame = (gameName) => {
+  return async function (dispatch) {
+    try {
+      const {data} = await axios.put(gameName + '/newGame', {
+        gameName
+      })
+      dispatch(updateGame(data))
+    } catch (error) {
+      console.error(error)
+    }
+  }
 }
 
-export function endTurn(gameName)
-{
-  axios.get(gameName + '/endTurn');
+export const endTurn = (gameName) => {
+  return async function (dispatch) {
+    try {
+      const {data} = await axios.put(gameName + '/endTurn', {
+        gameName
+      })
+      dispatch(updateGame(data))
+    } catch (error) {
+      console.error(error)
+    }
+  }
 }
 
-export function cardClick(gameName, cardIndex, teamClicked)
-{
-  axios.post(gameName + '/cardClicked', {
-    cardIndex,
-    teamClicked
-  });
+export const cardClick = (gameName, cardIndex, teamClicked) => {
+  return async function (dispatch) {
+    try {
+      const {data} = await axios.put(gameName + '/cardClicked', {
+        cardIndex,
+        teamClicked
+      })
+      dispatch(updateGame(data))
+    } catch (error) {
+      console.error(error)
+    }
+  }
 }
