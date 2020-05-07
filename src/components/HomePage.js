@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import history from "../history/index";
 
-import CodeNames from "../images/CodeNames.png";
+import Kodonemu from "../images/Kodonemu.png";
 import GitHubMark from "../images/GitHub-Mark-32px.png";
 
 class HomePage extends Component {
@@ -14,7 +14,7 @@ class HomePage extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img className="App-logo" src={CodeNames} alt="CodeNames Logo"></img>
+          <img className="App-logo" src={Kodonemu} alt="Kodonemu Logo"></img>
 
           <hr />
           <div id="input-field">

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import io from "socket.io-client";
 
 import Board from "./Board";
-import CodeNames from '../images/CodeNames.png'
+import Kodonemu from '../images/Kodonemu.png'
 import { connect } from "react-redux";
 
 import { changeRole } from "../actions/userOptionsActions";
@@ -67,7 +67,7 @@ class Game extends Component {
         id="game"
       >
         <div id="board">
-        <img className="App-logo" src={CodeNames} alt="CodeNames Logo"></img>
+        <img className="App-logo" src={Kodonemu} alt="Kodonemu Logo"></img>
           <h2 style={{ fontFamily: "Courier New,monospace" }}>
             Room Name : {this.state.gameName.toUpperCase()}
           </h2>
