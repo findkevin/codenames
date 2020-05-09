@@ -77,13 +77,10 @@ class Game extends Component {
         id="game"
       >
         <div id="board">
-        <img className="App-logo" src={CodeNames} alt="CodeNames Logo"></img>
-          <h2 style={{ fontFamily: "Courier New,monospace" }}>
-            ROOM NAME : {this.state.gameName.toUpperCase()}
-          </h2>
+        <img className="board-logo" src={CodeNames} alt="CodeNames Logo"></img>
           <p>
             Share this link with your friends to play together:
-            <Link to="">{window.location.href}</Link>
+            <Link>{window.location.href}</Link>
           </p>
 
           <div id="top-bar">
