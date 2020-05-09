@@ -3,17 +3,17 @@ import {Link} from 'react-router-dom';
 import io from "socket.io-client";
 
 import Board from "./Board";
-import Kodonemu from '../images/Kodonemu.png'
+import CodeNames from '../images/Kodonemu.png'
 import { connect } from "react-redux";
 
-import { changeRole } from "../actions/userOptionsActions";
+import { changeRole } from "../store/actions/userOptionsActions";
 import {
   updateGame,
   loadGame,
   startNewGame,
   endTurn,
   cardClick,
-} from "../actions/gameActions";
+} from "../store/actions/gameActions";
 import { socketUrl } from "../config/serverUrl";
 
 const stateMap = (store) => {
@@ -36,16 +36,26 @@ class Game extends Component {
     this.endTurn = this.endTurn.bind(this);
     this.changeRole = this.changeRole.bind(this);
     this.loadGame = this.loadGame.bind(this);
+    this.updateGame = this.updateGame.bind(this)
 
     // Socket room and connection
-    this.state.socket.emit("joinRoom", this.state.gameName);
+    this.state.socket.emit('joinRoom', this.state.gameName);
 
-    this.state.socket.on("updateGame", (game) =>
-      props.dispatch(updateGame(game))
-    );
+    // this.state.socket.on('updateGame', (game) => {
+    //   this.updateGame(game)
+    // });
 
     this.loadGame(this.state.gameName);
   }
+
+  componentDidMount(){
+    // console.log('THIS STATE SOCKET', this.state.socket);
+    // this.state.socket.emit('updateGame', 'updategame this state component mount.');
+    this.state.socket.on('updateGame', (data) => {
+      this.updateGame(data)
+    });
+  }
+
 
   render() {
     const winner = this.props.game.winner;
@@ -67,13 +77,13 @@ class Game extends Component {
         id="game"
       >
         <div id="board">
-        <img className="App-logo" src={Kodonemu} alt="Kodonemu Logo"></img>
+        <img className="App-logo" src={CodeNames} alt="CodeNames Logo"></img>
           <h2 style={{ fontFamily: "Courier New,monospace" }}>
-            Room Name : {this.state.gameName.toUpperCase()}
+            ROOM NAME : {this.state.gameName.toUpperCase()}
           </h2>
           <p>
             Share this link with your friends to play together:
-            <Link> www.codenames.com/{this.state.gameName}</Link>
+            <Link to="">{window.location.href}</Link>
           </p>
 
           <div id="top-bar">
@@ -155,6 +165,10 @@ class Game extends Component {
   /* Server actions */
   loadGame(gameName) {
     this.props.dispatch(loadGame(gameName));
+  }
+
+  updateGame(game) {
+    this.props.dispatch(updateGame(game))
   }
 
   newGame() {
