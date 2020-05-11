@@ -76,8 +76,7 @@ class Game extends Component {
         }
         id="game"
       >
-        <div id="board">
-        <img className="board-logo" src={CodeNames} alt="CodeNames Logo"></img>
+        <img className="game-logo" src={CodeNames} alt="CodeNames Logo"></img>
           <p>
             Share this link with your friends to play together:
             <Link>{window.location.href}</Link>
@@ -120,7 +119,6 @@ class Game extends Component {
             cards={this.props.game.cards}
             cardClick={(i) => this.cardClick(i)}
           />
-        </div>
       </div>
     );
   }

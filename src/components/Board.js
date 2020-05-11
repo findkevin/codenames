@@ -15,7 +15,7 @@ class Board extends Component {
 
   render() {
     return (
-      <div>
+      <div id='board'>
         <div className="board-row">
           {this.renderCard(0)}
           {this.renderCard(1)}

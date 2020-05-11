@@ -1,7 +1,10 @@
 /*! Game room styling */
 #game {
-  width: 100%;
   margin: 0 auto;
+  width: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -10,9 +13,8 @@
 
 /* Game Board */
 #board {
-  margin-top: 35px;
   display: flex;
-  min-height: 100vh;
+  width: 100vw;
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -20,20 +22,25 @@
   color: #444;
 }
 
-.board-logo {
-  width: 700px;
+.game-logo {
+  margin-top: 35px;
+  display: flex;
+  width: 70vw;
+  align-items: center;
 }
 
 /* Top Navbar */
 #top-bar {
-  width: 680px;
+  width: 80vw;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
 
+/* Game/Team Status */
 #status {
+  font-size: 2vw;
   font-weight: 900;
 }
 
@@ -60,19 +67,27 @@
   vertical-align: middle;
   backface-visibility: hidden;
   background: #b9efff;
-  border-radius: 10px;
-  width: 120px;
-  height: 80px;
-  line-height: 75px;
-  margin: 5px;
-  padding: 5px;
+  border-radius: 1vh;
+  width: 23vh;
+  height: 15vh;
+  line-height: 15vh;
+  margin: 1vh;
+  padding: 1vh;
   display: inline-block;
   text-align: center;
-  font-weight: 600;
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
+
+#game #board .board-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+}
+
 #game #board .card .word {
+  font-weight: 600;
   vertical-align: middle;
   display: inline-block;
 }
@@ -91,9 +106,9 @@
 #game.spymaster #board .card.black.hidden {
   background: #000;
   color: #fff;
-  width: 120px;
-  height: 80px;
-  line-height: 72px;
+  width: 23vh;
+  height: 15vh;
+  line-height: 15vh;
   outline: 5px solid #000;
   border: 2px solid #fff;
 }
@@ -105,8 +120,6 @@
   -ms-user-select: none;
   user-select: none;
 }
-
-
 
 /* End Spymaster Board View */
 
@@ -139,10 +152,10 @@
 /* Button/Switch Styling */
 
 .button {
-  padding: 0.85em 1em;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  font-size: 0.9em;
+  padding: 1.5vh 1.5vh;
+  border: 0.3vh solid transparent;
+  border-radius: 1vh;
+  font-size: 1.5vw;
   text-align: center;
   background-color: #2ba6cb;
   color: #fefefe;
@@ -157,7 +170,9 @@
 }
 
 .switch {
-  margin-right: 10px;
+  margin-right: 1vw;
+  padding: 1.5vh 1.5vh;
+  font-size: 1.5vw;
 }
 
 /* End Button Styling */

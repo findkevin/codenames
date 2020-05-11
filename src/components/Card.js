@@ -26,7 +26,7 @@ export default function Card(props) {
 
   return (
     <div className={"card" + cssClass} onClick={props.onClick}>
-      <div>{props.info.value}</div>
+      <div className="word">{props.info.value}</div>
     </div>
   );
 }
