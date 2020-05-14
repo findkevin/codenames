@@ -62,6 +62,7 @@ class HomePage extends Component {
     history.push("/" + gameName);
   };
 
+  //Create a functino to replace spaces and symbols with a dash-bar.
   sanitizeGameName = (event) => {
     let gameName = document.getElementById("game-name").value;
     gameName = gameName.replace(" ", "-");
@@ -72,7 +73,7 @@ class HomePage extends Component {
     document.getElementById("game-name").value = gameName;
   };
 
-  //Create a fn to listen for an event. If the event is ENTER, start the game.
+  //Create a function to listen for an event. If the event is ENTER, start the game.
   handleKeyPress = (event) => {
     if (event.key === "Enter") {
       this.startGame();
