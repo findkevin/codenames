@@ -32,7 +32,7 @@
 /* Top Navbar */
 #top-bar {
   width: 80vw;
-  max-width: 75vw;
+  max-width: 125%;
   display: flex;
   align-items: center;
   flex-direction: row;
