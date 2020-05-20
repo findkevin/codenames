@@ -37,6 +37,7 @@ class Game extends Component {
     this.changeRole = this.changeRole.bind(this);
     this.loadGame = this.loadGame.bind(this);
     this.updateGame = this.updateGame.bind(this)
+    this.scoreboard = this.createScoreboard.bind(this)
 
     // Socket room and connection
     this.state.socket.emit('joinRoom', this.state.gameName);
@@ -56,6 +57,8 @@ class Game extends Component {
     let status = "";
     let playingTeam = this.props.game.blueTurn ? "blue" : "red";
     let playingTeamColor = playingTeam;
+    let scoreboard = this.createScoreboard();
+
 
     if (winner) {
       status = winner.toUpperCase() + " TEAM WINS!";
@@ -84,6 +87,13 @@ class Game extends Component {
             </div>
             <div id="status" className={playingTeamColor}>
               {status}
+              <span style={{color: "black"}}>
+                <span> (</span>
+                <span className={scoreboard.firstTeamColor}>{scoreboard.firstTeamScore}</span>
+                <span>-</span>
+                <span className={scoreboard.secondTeamColor}>{scoreboard.secondTeamScore}</span>
+                <span>)</span>
+              </span>
             </div>
             <div>
               <label className="switch">
