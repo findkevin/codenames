@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Card from "./Card";
 
 class Board extends Component {
-  renderCard(i) {
+  renderCard = (i) => {
     if (this.props.cards[i]) {
       return (
         <Card

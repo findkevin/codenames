@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import io from "socket.io-client";
 
 import Board from "./Board";
-import CodeNames from '../images/Kodonemu.png'
+import CodeNames from "../images/Kodonemu.png";
 import { connect } from "react-redux";
 
 import { changeRole } from "../actions/userOptionsActions";
@@ -32,25 +32,17 @@ class Game extends Component {
       socket: io.connect(socketUrl),
     };
 
-    this.newGame = this.newGame.bind(this);
-    this.endTurn = this.endTurn.bind(this);
-    this.changeRole = this.changeRole.bind(this);
-    this.loadGame = this.loadGame.bind(this);
-    this.updateGame = this.updateGame.bind(this)
-    this.scoreboard = this.createScoreboard.bind(this)
-
     // Socket room and connection
-    this.state.socket.emit('joinRoom', this.state.gameName);
+    this.state.socket.emit("joinRoom", this.state.gameName);
 
     this.loadGame(this.state.gameName);
   }
 
-  componentDidMount(){
-    this.state.socket.on('updateGame', (data) => {
-      this.updateGame(data)
+  componentDidMount() {
+    this.state.socket.on("updateGame", (data) => {
+      this.updateGame(data);
     });
   }
-
 
   render() {
     const winner = this.props.game.winner;
@@ -58,7 +50,6 @@ class Game extends Component {
     let playingTeam = this.props.game.blueTurn ? "blue" : "red";
     let playingTeamColor = playingTeam;
     let scoreboard = this.createScoreboard();
-
 
     if (winner) {
       status = winner.toUpperCase() + " TEAM WINS!";
@@ -74,55 +65,59 @@ class Game extends Component {
         id="game"
       >
         <img className="game-logo" src={CodeNames} alt="CodeNames Logo"></img>
-          <p>
-            Share this link with your friends to play together:
-            <Link>{window.location.href}</Link>
-          </p>
+        <p>
+          Share this link with your friends to play together:
+          <Link>{window.location.href}</Link>
+        </p>
 
-          <div id="top-bar">
-            <div>
-              <button id="end-turn" className="button" onClick={this.endTurn}>
-                End {playingTeam.toUpperCase()} team's turn
-              </button>
-            </div>
-            <div id="status" className={playingTeamColor}>
-              {status}
-              <span style={{color: "black"}}>
-                <span> (</span>
-                <span className={scoreboard.firstTeamColor}>{scoreboard.firstTeamScore}</span>
-                <span>-</span>
-                <span className={scoreboard.secondTeamColor}>{scoreboard.secondTeamScore}</span>
-                <span>)</span>
-              </span>
-            </div>
-            <div>
-              <label className="switch">
-                <input
-                  type="checkbox"
-                  value={
-                    this.props.options.role === "Spymaster"
-                      ? "Player"
-                      : "Spymaster"
-                  }
-                  onChange={this.changeRole}
-                  checked={this.props.options.role === "Spymaster"}
-                />
-                <span className="slider">
-                  {this.props.options.role === "Spymaster"
-                    ? " I am the Spymaster!"
-                    : " Spymaster"}
-                </span>
-              </label>
-              <button id="next-game" className="button" onClick={this.newGame}>
-                New Game!
-              </button>
-            </div>
+        <div id="top-bar">
+          <div>
+            <button id="end-turn" className="button" onClick={this.endTurn}>
+              End {playingTeam.toUpperCase()} team's turn
+            </button>
           </div>
+          <div id="status" className={playingTeamColor}>
+            {status}
+            {/* <span style={{ color: "black" }}>
+              <span> (</span>
+              <span className={scoreboard.firstTeamColor}>
+                {scoreboard.firstTeamScore}
+              </span>
+              <span>-</span>
+              <span className={scoreboard.secondTeamColor}>
+                {scoreboard.secondTeamScore}
+              </span>
+              <span>)</span>
+            </span> */}
+          </div>
+          <div>
+            <label className="switch">
+              <input
+                type="checkbox"
+                value={
+                  this.props.options.role === "Spymaster"
+                    ? "Player"
+                    : "Spymaster"
+                }
+                onChange={this.changeRole}
+                checked={this.props.options.role === "Spymaster"}
+              />
+              <span className="slider">
+                {this.props.options.role === "Spymaster"
+                  ? " I am the Spymaster!"
+                  : " Spymaster"}
+              </span>
+            </label>
+            <button id="next-game" className="button" onClick={this.newGame}>
+              New Game!
+            </button>
+          </div>
+        </div>
 
-          <Board
-            cards={this.props.game.cards}
-            cardClick={(i) => this.cardClick(i)}
-          />
+        <Board
+          cards={this.props.game.cards}
+          cardClick={(i) => this.cardClick(i)}
+        />
       </div>
     );
   }
@@ -130,7 +125,7 @@ class Game extends Component {
   /* Helper/dispatch functions */
   /* Client actions */
   // Score CSS classes and info
-  createScoreboard() {
+  createScoreboard = () => {
     let firstTeamColor;
     let firstTeamScore;
     let secondTeamColor;
@@ -146,7 +141,6 @@ class Game extends Component {
       secondTeamColor = "blue";
       secondTeamScore = this.props.game.blueCards;
     }
-
     return {
       firstTeamColor,
       firstTeamScore,
@@ -155,31 +149,33 @@ class Game extends Component {
     };
   }
 
-  changeRole(event) {
+  changeRole = (event) => {
     let el = event.target;
 
     this.props.dispatch(changeRole(el.value));
   }
 
   /* Server actions */
-  loadGame(gameName) {
+  loadGame = (gameName) => {
     this.props.dispatch(loadGame(gameName));
   }
 
-  updateGame(game) {
-    this.props.dispatch(updateGame(game))
+  updateGame = (game) => {
+    this.props.dispatch(updateGame(game));
   }
 
-  newGame() {
+  newGame = () => {
     this.props.dispatch(startNewGame(this.props.game.gameName));
   }
 
-  cardClick(cardIndex) {
+  cardClick = (cardIndex) => {
     const teamClicked = this.props.game.blueTurn ? "Blue" : "Red";
-    this.props.dispatch(cardClick(this.props.game.gameName, cardIndex, teamClicked));
+    this.props.dispatch(
+      cardClick(this.props.game.gameName, cardIndex, teamClicked)
+    );
   }
 
-  endTurn() {
+  endTurn = () => {
     this.props.dispatch(endTurn(this.props.game.gameName));
   }
 }

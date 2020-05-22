@@ -2,7 +2,7 @@
 #game {
   margin: 0 auto;
   width: 100vh;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   -webkit-user-select: none;
@@ -57,20 +57,22 @@
   cursor: pointer;
 }
 
+#game #board .card:hover {
+  background-color: #6adcff;
+}
+
 #game #board .card {
-  vertical-align: middle;
   backface-visibility: hidden;
   background: #b9efff;
+  background-size: contain;
   border-radius: 1vh;
-  width: 23vh;
+  width: 24vh;
   height: 15vh;
   line-height: 15vh;
   margin: 1vh;
   padding: 1vh;
-  display: inline-block;
   text-align: center;
-  -webkit-transition: 1s;
-  transition: 1s;
+  transition: .75s;
 }
 
 #game #board .board-row {
@@ -120,24 +122,36 @@
 /* Flipped Card Styling*/
 
 #game #board .card.red.revealed {
-  background: #d13030;
+  background:  #d13030;
+  background-size: contain;
+  line-height: 1vh;
+  text-align: left;
   color: #fff;
   transform: rotateY(-360deg);
 }
+
 #game #board .card.blue.revealed {
-  background: #4183cc;
+  background:  #4183cc;
+  background-size: contain;
+  line-height: 1vh;
+  text-align: left;
   color: #fff;
   transform: rotateY(-360deg);
-
 }
 #game #board .card.black.revealed {
   background: #000;
+  background-size: contain;
+  line-height: 1vh;
+  text-align: left;
   color: #fff;
   transform: rotateY(-360deg);
-
 }
 #game #board .neutral.revealed {
   background: #ede2cc;
+  background-size: contain;
+  line-height: 1vh;
+  text-align: left;
+  color: #fff;
   transform: rotateY(-360deg);
 }
 
@@ -155,7 +169,8 @@
   color: #fefefe;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-color: #258dad;
 }
 

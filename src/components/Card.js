@@ -10,22 +10,30 @@ export default function Card(props) {
 
   if (props.info.team === "Blue") {
     cssClass += " blue";
-    card += BlueCard;
+    if(props.info.clicked){
+      card = BlueCard;
+    }
   } else if (props.info.team === "Red") {
     cssClass += " red";
-    card += RedCard;
+    if(props.info.clicked){
+      card = RedCard;
+    }
   } else if (props.info.team === "Assassin") {
     cssClass += " black";
-    card += BlackCard;
+    if(props.info.clicked){
+      card = BlackCard;
+    }
   } else {
     cssClass += " neutral";
-    card += NeutralCard;
+    if(props.info.clicked){
+      card = NeutralCard;
+    }
   }
 
   cssClass += props.info.clicked ? " revealed" : " hidden";
 
   return (
-    <div className={"card" + cssClass} onClick={props.onClick}>
+    <div className={"card" + cssClass} onClick={props.onClick} style={{backgroundImage: `url(${card})`}}>
       <div className="word">{props.info.value}</div>
     </div>
   );
