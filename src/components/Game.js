@@ -4,7 +4,9 @@ import io from "socket.io-client";
 
 import Board from "./Board";
 import CodeNames from "../images/Kodonemu.png";
+import LinkedinMark from "../images/Linkedin-Mark.png"
 import { connect } from "react-redux";
+
 
 import { changeRole } from "../actions/userOptionsActions";
 import {
@@ -118,6 +120,23 @@ class Game extends Component {
           cards={this.props.game.cards}
           cardClick={(i) => this.cardClick(i)}
         />
+
+        <footer>
+          <span>Enjoying the game? Connect with me on LinkedIn! </span>
+
+          <a
+            className="App-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/find-kevin/"
+          >
+            <img
+              className="LinkedIn-logo"
+              src={LinkedinMark}
+              alt="LinkedIn Mark"
+            ></img>
+          </a>
+        </footer>
       </div>
     );
   }

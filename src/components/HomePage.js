@@ -3,6 +3,7 @@ import history from "../history/index";
 
 import Kodonemu from "../images/Kodonemu.png";
 import GitHubMark from "../images/GitHub-Mark-32px.png";
+import LinkedinMark from "../images/Linkedin-Mark.png";
 
 class HomePage extends Component {
   constructor(props) {
@@ -32,7 +33,7 @@ class HomePage extends Component {
         <footer>
           <span>Unofficial web version of Codenames created by Kevin Lam </span>
 
-          <a
+          {/* <a
             className="App-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,6 +43,19 @@ class HomePage extends Component {
               className="GitHub-logo"
               src={GitHubMark}
               alt="GitHub Mark"
+            ></img>
+          </a> */}
+
+          <a
+            className="App-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/find-kevin/"
+          >
+            <img
+              className="LinkedIn-logo"
+              src={LinkedinMark}
+              alt="LinkedIn Mark"
             ></img>
           </a>
         </footer>
