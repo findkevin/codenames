@@ -26,13 +26,14 @@
   margin-top: 35px;
   display: flex;
   width: 70vw;
+  max-width: 800px;
   align-items: center;
 }
 
 /* Top Navbar */
 #top-bar {
   width: 80vw;
-  max-width: 125%;
+  max-width: 850px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -41,8 +42,8 @@
 
 /* Game/Team Status */
 #status {
-  font-size: 2vw;
-  font-weight: 900;
+  font-size: 1.75vw;
+  font-weight: 800;
 }
 
 /* Unflipped Cards */
